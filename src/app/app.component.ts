@@ -1,3 +1,5 @@
+import { Service } from './model/service.model';
+import { ServicesComponent } from './services/services.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Project';
+  
+
 }
+

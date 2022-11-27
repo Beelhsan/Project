@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<div class="container">
+    <div class="card shadow mb-4">
+       <div class="card-body">
+         <table class="table table-striped">
+          
+                <tr><th>ID</th> <th>Date Création</th> <th>Nom</th> <th>Prix</th> 
+                   
+                </tr>
+           
+           <tbody *ngFor="let service of services">
+              <tr >
+                 <td>{{service.id_service}}</td>
+                 <td>{{service.date_creation | date: 'dd/MM/yyyy'}}</td>
+                 <td>{{service.nom_service}}</td>
+                 <td>{{service.prix_service}}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+</div>
+</html>

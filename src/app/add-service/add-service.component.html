@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<div class="container">
+    <div>
+        <h2>Ajouter un Service :</h2>
+    </div>
+    <form >
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <label >ID Service</label>
+          <input type="text" [(ngModel)]= "newService.id_service" name="id_service" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <label >Date création</label>
+          <input type="date" [(ngModel)]= "newService.date_creation" name="date_creation" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+           <label >Nom Service</label>
+           <input type="text" [(ngModel)]= "newService.nom_service" name="nom_service" class="form-control">
+        </div>
+
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <label >Prix Service</label>
+           <input type="number" [(ngModel)]= "newService.prix_service" name="prix_service" class="form-control">
+        </div>
+
+       
+
+        <div class="mt-2">
+          <button type="submit" (click)="addService()" class="btn btn-success">Ajouter</button>
+           <div>
+            <h3></h3>
+           </div>
+        </div>
+    </form>
+</div>
+</html>
+        
